@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Minecraft Core",
+        "url": "https://deine-domain.de",
+        "description": "Haupt-Netzwerk Projekt"
+    },
+    {
+        "name": "Dev Dashboard",
+        "url": "https://dev.deine-domain.de",
+        "description": "Interne Tools"
+    }
+]
