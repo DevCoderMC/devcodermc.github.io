@@ -12,7 +12,7 @@
     "category": "Website",
     "description": "Die offizielle Minecraft Core Website",
     "tags": ["HTML", "CSS", "JS"],
-    "link": "devcodermc.github.io/core",
+    "link": "https://github.io",
     "linkText": "Core-Web"
   }
 ]
