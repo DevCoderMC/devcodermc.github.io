@@ -1,7 +1,12 @@
 [
     {
-        "name": "Minecraft Core",
-        "url": "devcodermc.github.io/core",
-        "description": "Projekt-Website"
+        "name": "Minecraft Core Website",
+        "url": "https://deine-domain.de",
+        "description": "Haupt-Netzwerk Projekt"
+    },
+    {
+        "name": "Dev Dashboard",
+        "url": "https://dev.deine-domain.de",
+        "description": "Interne Tools"
     }
 ]

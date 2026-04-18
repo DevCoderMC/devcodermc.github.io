@@ -1,18 +1,18 @@
 [
   {
     "title": "Minecraft Core",
-    "category": "Minecraft-Server-Plugin",
-    "description": "High-Performance Server-Netzwerk mit Custom Server-Plugin.",
-    "tags": ["Java", "Paper 1.21.x", "DevCoder", "Furiusfighter213"],
+    "category": "Infrastruktur",
+    "description": "High-Performance Server-Netzwerk mit Custom Linux-Backend.",
+    "tags": ["Java", "Velocity", "Linux"],
     "link": "https://dsc.gg/minecraft-core",
     "linkText": "Discord"
   },
   {
-    "title": "Minecraft Core",
-    "category": "Website",
-    "description": "Die offizielle Minecraft Core Website",
-    "tags": ["HTML", "CSS", "JS"],
-    "link": "https://github.io",
-    "linkText": "Core-Web"
+    "title": "Discord Automation",
+    "category": "Bots",
+    "description": "Python-basierte Bots für komplexe Community-Steuerung.",
+    "tags": ["Python", "API", "Async"],
+    "link": "#",
+    "linkText": "GitHub"
   }
 ]
