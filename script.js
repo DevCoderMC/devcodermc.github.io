@@ -179,3 +179,29 @@ function initDiscordAnimation() {
         }, 800);
     });
 }
+
+// 5. MOBILE SPECIFIC INTERACTIONS
+let lastScrollY = window.scrollY;
+const navCenter = document.querySelector('.nav-center');
+
+window.addEventListener('scroll', () => {
+    // Hide/Show Mobile Dock on Scroll
+    if (window.innerWidth <= 768 && navCenter) {
+        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+            navCenter.style.transform = 'translateX(-50%) translateY(120px)';
+            navCenter.style.opacity = '0';
+        } else {
+            navCenter.style.transform = 'translateX(-50%) translateY(0)';
+            navCenter.style.opacity = '1';
+        }
+        lastScrollY = window.scrollY;
+    }
+
+    // Subtle Parallax for Titles
+    const title = document.querySelector('.home-title') || document.querySelector('.page-title');
+    if (title) {
+        const scrolled = window.scrollY;
+        title.style.transform = `translateY(${scrolled * 0.15}px)`;
+        title.style.opacity = 1 - (scrolled / 500);
+    }
+});
