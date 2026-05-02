@@ -1,14 +1,14 @@
 [
   {
-    "title": "Server Setup 2026",
-    "type": "IMAGE",
-    "url": "https://via.placeholder.com/600x400",
-    "description": "Mein aktuelles Linux-Setup für Minecraft Core."
+    "title": "My YouTube",
+    "type": "Social Media",
+    "url": "https://www.youtube.com/channel/UCLbtO1GFOVjgKaCed78f6Kw",
+    "description": "My YT Channel"
   },
   {
-    "title": "Python Bot Console",
-    "type": "CODE",
-    "url": "#",
-    "description": "Ein Einblick in die Terminal-Logs meiner Automation."
+    "title": "My Discord",
+    "type": "Media",
+    "url": "devcodermc",
+    "description": "Use the URL to add me on Discord."
   }
 ]
