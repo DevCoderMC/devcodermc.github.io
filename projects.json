@@ -1,18 +1,10 @@
 [
   {
-    "title": "Minecraft Core",
-    "category": "Infrastruktur",
-    "description": "High-Performance Server-Netzwerk mit Custom Linux-Backend.",
-    "tags": ["Java", "Velocity", "Linux"],
-    "link": "https://dsc.gg/minecraft-core",
+    "title": "GlazeSMP",
+    "category": "Comming Soon Minecraft Server",
+    "description": "My new comming soon Minecraft Server mit CreateNinja.",
+    "tags": ["Java", "Comming Soon"],
+    "link": "https://dsc.gg/glazesmp",
     "linkText": "Discord"
-  },
-  {
-    "title": "Discord Automation",
-    "category": "Bots",
-    "description": "Python-basierte Bots für komplexe Community-Steuerung.",
-    "tags": ["Python", "API", "Async"],
-    "link": "#",
-    "linkText": "GitHub"
   }
 ]
