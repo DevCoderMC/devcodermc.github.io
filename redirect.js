@@ -1,14 +1,17 @@
 (async function() {
-    const path = window.location.pathname.replace(/\/+$/, '') || '/';
+    var path = window.location.pathname.replace(/\/+$/, '') || '/';
     try {
-        const res = await fetch('/redirects.json');
-        const redirects = await res.json();
-        for (const r of redirects) {
-            const rp = r.path.startsWith('/') ? r.path : '/' + r.path;
+        var res = await fetch('/redirects.json');
+        var redirects = await res.json();
+        for (var i = 0; i < redirects.length; i++) {
+            var rp = redirects[i].path;
+            if (rp.charAt(0) !== '/') rp = '/' + rp;
             if (path === rp) {
-                window.location.replace(r.url);
+                window.location.href = redirects[i].url;
                 return;
             }
         }
-    } catch (e) {}
+    } catch (e) {
+        console.warn('Redirect-Load-Fehler:', e);
+    }
 })();
