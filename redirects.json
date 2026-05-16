@@ -1,10 +1,6 @@
 [
     {
-        "path": "glaze-dc",
-        "url": "https://dsc.gg/glazesmp"
-    },
-    {
-        "path": "glazebotweb",
-        "url": "https://deinemom.de"
+        "path": "dc",
+        "url": "dsc.gg/glazesmp"
     }
 ]
