@@ -1,6 +1,11 @@
 [
     {
-        "path": "dc",
+        "path": "dc-glaze",
         "url": "dsc.gg/glazesmp"
+    },
+    {
+        "path": "test",
+        "url": "test.de"
+
     }
 ]
