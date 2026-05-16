@@ -27,36 +27,32 @@
             margin: 0 auto 20px;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
-        p { opacity: 0.5; font-size: 14px; }
-        .error { display: none; }
     </style>
 </head>
 <body>
     <div>
         <div class="spinner"></div>
         <p>Weiterleitung...</p>
-        <p class="error" style="margin-top:20px;color:#ef4444;">Keine Weiterleitung gefunden</p>
     </div>
     <script>
-    (async function() {
-        var path = window.location.pathname.replace(/\/+$/, '') || '/';
-        try {
-            var res = await fetch('/redirects.json');
-            var redirects = await res.json();
-            for (var i = 0; i < redirects.length; i++) {
-                var rp = redirects[i].path;
+        // >>> HIER TRÄGST DU DEINE WEITERLEITUNGEN EIN <<<
+        var REDIRECTS = [
+            { path: "/dc",          url: "https://dsc.gg/glazesmp" },
+            { path: "/discord",     url: "https://dsc.gg/glazesmp" },
+        ];
+
+        (function() {
+            var path = window.location.pathname.replace(/\/+$/, '') || '/';
+            for (var i = 0; i < REDIRECTS.length; i++) {
+                var rp = REDIRECTS[i].path;
                 if (rp.charAt(0) !== '/') rp = '/' + rp;
                 if (path === rp) {
-                    window.location.href = redirects[i].url;
+                    window.location.href = REDIRECTS[i].url;
                     return;
                 }
             }
-        } catch (e) {
-            console.warn('Redirect-Fehler:', e);
-        }
-        document.querySelector('.spinner').style.display = 'none';
-        document.querySelector('.error').style.display = 'block';
-    })();
+            document.body.innerHTML = '<div style="text-align:center;margin-top:20vh"><h1 style="font-size:5rem;color:#3b82f6;">404</h1><p style="opacity:0.5;">Seite nicht gefunden</p><a href="/" style="color:#3b82f6;text-decoration:underline;">Zur Startseite</a></div>';
+        })();
     </script>
 </body>
 </html>
