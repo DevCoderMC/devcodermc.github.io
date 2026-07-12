@@ -3,5 +3,10 @@
         "name": "Minecraft Core Website",
         "url": "https://devcodermc.github.io/core",
         "description": "An old Server"
+    },
+    {
+        "name": "Link-Portfolio",
+        "url": "https://guns.lol/devcoder"
+        "description": "A portfolio with links"
     }
 ]
