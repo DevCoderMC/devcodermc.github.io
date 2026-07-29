@@ -8,5 +8,9 @@
         "name": "Link-Portfolio",
         "url": "https://guns.lol/devcoder"
         "description": "A portfolio with links"
-    }
+    },
+    {
+        "name": "mcp-log-analyzer",
+        "url": "https://mcp-log-analyzer.vercel.app"
+        "description": "A log analyzer that checks your Minecraft logs for hacks and cleans them up"
 ]
