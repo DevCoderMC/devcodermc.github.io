@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCoder | License</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="zugeschnittenes_kreis_bild.png">
+    <style>
+        .license-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 5% 100px;
+            text-align: left;
+        }
+
+        .license-container h2 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            margin: 50px 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .license-container h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .license-container .allowed {
+            color: #22c55e;
+        }
+
+        .license-container .denied {
+            color: #ef4444;
+        }
+
+        .license-card {
+            background: var(--glass);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow, none);
+        }
+
+        .license-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .license-card li {
+            padding: 12px 0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .license-card li:last-child {
+            border-bottom: none;
+        }
+
+        .license-card .badge {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            flex-shrink: 0;
+        }
+
+        .badge-allowed {
+            background: rgba(34, 197, 94, 0.15);
+            color: #22c55e;
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
+        .badge-denied {
+            background: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .license-note {
+            margin-top: 50px;
+            padding: 25px 30px;
+            border-radius: 20px;
+            background: rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            font-size: 0.85rem;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .license-card {
+                padding: 20px;
+            }
+            .license-card li {
+                font-size: 0.9rem;
+                padding: 10px 0;
+            }
+            .license-note {
+                padding: 20px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="vertical-line"></div>
+
+    <nav class="navbar">
+        <div class="logo">DEV<span style="color: #3b82f6;">CODER</span></div>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="pages.html">Pages</a>
+            <a href="media.html">Media</a>
+            <a href="license.html" class="active">License</a>
+        </div>
+        <div class="nav-right">
+            <button id="theme-btn" class="theme-toggle">WHITE ☀️</button>
+            <a href="https://dsc.gg/minecraft-core" target="_blank" class="discord-btn">Discord</a>
+        </div>
+    </nav>
+
+    <main class="page-layout">
+        <h1 class="page-title">LI<span style="color: #3b82f6;">CENSE</span></h1>
+
+        <div class="license-container">
+            <div class="license-card">
+                <ul>
+                    <li>
+                        <span class="badge badge-allowed">Allowed</span>
+                        <strong>Personal Use</strong> &mdash; You may use the content privately without restrictions.
+                    </li>
+                    <li>
+                        <span class="badge badge-allowed">Allowed</span>
+                        <strong>Sharing</strong> &mdash; You may share the official and unmodified download link.
+                    </li>
+                    <li>
+                        <span class="badge badge-denied">Not Allowed</span>
+                        <strong>Modification</strong> &mdash; You may not edit, change, or repackage any of the files.
+                    </li>
+                    <li>
+                        <span class="badge badge-denied">Not Allowed</span>
+                        <strong>Redistribution</strong> &mdash; You may not share modified versions in any form.
+                    </li>
+                    <li>
+                        <span class="badge badge-denied">Not Allowed</span>
+                        <strong>Commercial Use</strong> &mdash; Selling or monetizing the content in any way is strictly prohibited.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="license-note">
+                This license applies to all my Minecraft modifications, texture packs, data packs, and related content published on <a href="https://modrinth.com" target="_blank" style="color: #3b82f6;">Modrinth</a> and other platforms unless stated otherwise.
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>&copy; 2026 𝕯𝖊𝖛𝕮𝖔𝖉𝖊𝖗.</p>
+            </div>
+            <div class="footer-links">
+                <a href="license.html">License</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+    <script src="redirect.js"></script>
+</body>
+
+</html>

@@ -7,5 +7,13 @@
         "path": "test",
         "url": "test.de"
 
+    },
+    {
+        "path": "licence",
+        "url": "/license.html"
+    },
+    {
+        "path": "/licence",
+        "url": "/license.html"
     }
 ]
