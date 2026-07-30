@@ -155,27 +155,36 @@ async function loadContent() {
     }
 }
 
-// 4. DISCORD ANIMATION
+// 4. DISCORD COPY
 function initDiscordAnimation() {
     const btn = document.querySelector('.discord-btn');
     if (!btn) return;
 
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        const url = btn.href;
+        navigator.clipboard.writeText('devcodermc');
 
-        // Visual Feedback
         btn.classList.add('discord-active');
         if (window.boostBg) window.boostBg(0.15);
         if (bgObjects.material) bgObjects.material.color.setHex(0x5865F2);
 
-        // Flash Effect
-        const flash = document.createElement('div');
-        flash.className = 'page-flash';
-        document.body.appendChild(flash);
+        const overlay = document.createElement('div');
+        overlay.className = 'discord-overlay';
+        overlay.innerHTML = '<div class="discord-ring"><svg viewBox="0 0 100 100" class="discord-arrow-svg"><path d="M50 20 L50 80 M35 65 L50 80 L65 65" fill="none" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>';
+        document.body.appendChild(overlay);
 
         setTimeout(() => {
-            window.location.href = url;
+            overlay.querySelector('.discord-ring').classList.add('ring-done');
+
+            setTimeout(() => {
+                const toast = document.createElement('div');
+                toast.className = 'discord-toast';
+                toast.textContent = '✓ devcodermc copied to clipboard';
+                document.body.appendChild(toast);
+                setTimeout(() => toast.remove(), 2500);
+            }, 500);
+
+            setTimeout(() => overlay.remove(), 1200);
         }, 800);
     });
 }

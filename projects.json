@@ -1,10 +1,18 @@
 [
   {
-    "title": "GlazeSMP",
+    "title": "FightLab",
     "category": "Comming Soon Minecraft Server",
-    "description": "My new comming soon Minecraft Server with CreateNinja.",
+    "description": "My new comming soon Minecraft Server with DarkMaster_VX.",
     "tags": ["Java", "Comming Soon"],
-    "link": "https://dsc.gg/glazesmp",
-    "linkText": "Discord"
+    "link": "#",
+    "linkText": "Coming Soon"
+  },
+  {
+    "title": "AirCrafter-Mods",
+    "category": "Coding",
+    "description": "Contribution to Minecraft mods by AirCrafter",
+    "tags": ["Java", "Minecraft", "Version"],
+    "link": "https://discord.gg/3ZQxVXXg3V",
+    "linkText": "Discord by AirCrafter"
   }
 ]
